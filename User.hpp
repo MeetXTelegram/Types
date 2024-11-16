@@ -26,6 +26,11 @@ enum class UserLanguage {
     /* More soon */
 };
 
+enum class UserGender {
+    MALE = 1, /* Man */
+    FEMALE = 2, /* Girl */
+};
+
 /* Small hint of User structure
  *
  * id: std::int64_t, Unique user ID
@@ -37,6 +42,7 @@ enum class UserLanguage {
  * country: UserCountry, user's country
  * language: UserLanguage, user's language
  * city: std::string user's city
+ * gender: UserGender, user's gender
  * media: std::vector<std::string>, user's media(photo, video)
  * preferredCountries: std::vector<UserCountry>, user's preferred countries
  * preferredLanguages: std::vector<UserLanguage>, user's preferred languages
@@ -54,6 +60,7 @@ struct User {
     UserCountry country;
     UserLanguage language;
     std::string city;
+    UserGender gender;
     std::vector<std::string> media;
     std::vector<UserCountry> preferredCountries;
     std::vector<UserLanguage> preferredLanguages;
