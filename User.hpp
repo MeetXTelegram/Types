@@ -50,7 +50,6 @@ struct User {
     std::string city;
     UserGender gender;
     std::vector<std::string> media;
-    std::vector<UserCountry> preferredCountries;
     std::vector<UserLanguage> preferredLanguages;
     std::vector<std::uint16_t> preferredAges;
     std::vector<std::string> preferredCities;
