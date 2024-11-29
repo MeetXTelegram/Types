@@ -4,17 +4,6 @@
 #include <string>
 #include <vector>
 
-enum class UserCountry {
-    RUSSIA = 1,
-    USA = 2,
-    BELARUS = 3,
-    UKRAINE = 4, /* For how long? */
-    POLAND = 5,
-    FINLAND = 6,
-    GERMANY = 7,
-    /* More soom */
-};
-
 enum class UserLanguage {
     RU = 1, /* Russian */
     EN = 2, /* English */
@@ -31,7 +20,7 @@ enum class UserGender {
     FEMALE = 2, /* Girl */
 };
 
-/* Small hint of User structure
+/* Small hint of the User structure
  *
  * id: std::int64_t, Unique user ID
  * tgFirstName: std::string, first_name(name) in Telegram
@@ -57,7 +46,6 @@ struct User {
     std::uint16_t age;
     std::string name;
     std::string bio;
-    UserCountry country;
     UserLanguage language;
     std::string city;
     UserGender gender;
