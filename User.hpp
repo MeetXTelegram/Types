@@ -8,7 +8,7 @@ enum class UserLanguage {
     RU = 1, /* Russian */
     EN = 2, /* English */
     BY = 3, /* Belarus */
-    UK = 4, /* Ukrain */ /* For how long? */
+    UK = 4, /* Ukrain */ /* For how long? ;) */
     PL = 5, /* Poland */
     FI = 6, /* Finland */
     GR = 7, /* Germany */
@@ -37,6 +37,7 @@ enum class UserGender {
  * preferredLanguages: std::vector<UserLanguage>, user's preferred languages
  * preferredAges: std::vector<std::uint16_t>, user's preferred ages
  * preferredCities: std::vector<std::string>, user's preferred cities
+ * preferredGenders: std::vector<UserGender>, user's preferred genders
  *
  */
 struct User {
@@ -53,4 +54,5 @@ struct User {
     std::vector<UserLanguage> preferredLanguages;
     std::vector<std::uint16_t> preferredAges;
     std::vector<std::string> preferredCities;
+    std::vector<UserGender> preferredGenders;
 };
