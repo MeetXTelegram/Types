@@ -55,5 +55,5 @@ struct User {
     std::vector<std::uint16_t> preferredAges;
     std::vector<std::string> preferredCities;
     std::vector<UserGender> preferredGenders;
-    bool hasProfle;
+    bool hasProfile;
 };
